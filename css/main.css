@@ -1,0 +1,84 @@
+
+body {
+	letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
+}
+h1 {
+	margin-top: 50px;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+}
+h3 {
+	color: #00b7b5;
+	text-align: center;
+	margin-top: 40px;
+	text-transform: uppercase;
+	font-size: 32px;
+}
+form {
+	color: #00b7b5;
+	font-size: 20px;
+	text-align: center;
+}
+p {
+	text-align: center;
+	color: #838ca1;
+	font-size: 16px;
+}
+nav {
+	height:100px;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+nav li { 
+	display: inline;  
+}
+nav a {
+  color: black;
+  margin: 0 0 0 10px;
+  padding: 0;
+  text-align:right;
+  text-decoration: none;
+}
+label {
+  font-size: 18px; 
+}
+.site-header {
+  background-color: #d3d9b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+.main-image {
+
+}
+.intro {
+	height: 150px;
+}
+.form-background {
+	min-height: 600px;
+	background: linear-gradient(white, #d3d9b2);
+}
+.action {
+	text-transform: uppercase;
+	font-size: 20px;
+	margin: 20px 0 50px 0;
+}
+.form-field label {
+	display:block;
+	margin-bottom: 14px;
+}
+.question select, .question input {
+	border-radius: 20px;
+	height: 40px;
+	width: 30%;
+	margin-bottom: 20px;
+}
+.submit {
+	margin-top: 30px;
+}
+
+
