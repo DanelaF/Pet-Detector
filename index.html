@@ -1,117 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="site description goes here">
-    	<meta name="keywords" content="site, keywords, go, here">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-		<title>Pet Detector</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="site description goes here">
+	<meta name="keywords" content="site, keywords, go, here">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Pet Detector</title>
 
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	</head>
-	<body>
-		<nav>
-			<div class="menu">
-				<ul>
-					<li><a href="#">Report a Pet</a></li>
-					<li><a href="#">Search</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contacts</a></li>
-				</ul>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Neucha" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<a href="#"><img src="images/paw.png" class="paw-icon" alt="dog paw" height="50" width="50"> </a>
+		<ul>
+			<li><a href="#report-form">Report a Pet</a></li>
+			<li><a href="#search-button">Search for a Pet</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+	</nav>
+	<div class="site-container">
+		<header class="site-header">
+			<div class="main-image">
+				<img src="images/pet-detector2.png" alt="Pet Detector logo" height="400" width="400">
+				<h1>Pet Detector</h1>
+				<h2>Sherlock Bones is here to help find your missing pet</h2>
 			</div>
-		</nav>
-		<div class="site-container">
-			<header class="site-header">
-				<div class="main-image">
-					<h1>Pet Detector</h1>
-					<img src="images/pet-detector2.png" alt="Pet Detector logo" height="600" width="600">
+		</header>
+		<main class="content-wrapper">
+			<div class="intro">
+				<div class="row">
+					<div class="column">
+						<div class>
+							<img src="images/sad.png" alt="sad face" height="100" width="100">
+						</div>
+						<h4>I lost my pet</h4>
+						<div class="column-content"> 
+							<p>Don't worry. Fill our form with your pet's data to register your pet. We will tell you if we found a match in the found pets list. You can have a look at the list of found pets. Your pet's data will be automatically sent to RSPCA and all the shelter in the UK</p>
+							<div class="form-field submit">
+								<input type="submit" value="Find my pet">
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div>
+							<img src="images/confused.png" alt="confused face" height="100" width="100">
+						</div>
+						<h4>I found a pet</h4>
+						<div class="column-content"> 
+							<p>Now we need to find their owner. Enter some information about the pet you found. They will be added to our database and we'll tell you if there is a match. You can also browse the list of lost pets</p>
+							<div class="form-field submit">
+								<input type="submit" value="Find the owner">
+							</div>
+						</div>
+					</div>
 				</div>
-			</header>
-			<main class="site-content">
-				<div class="intro">
-					<h3>Report a pet</h3> 
-					<p>Fill the form below with as most information as possible regarding the pet that you have lost of found. </br> Click on Submit to add your pet to our database
-					</p>
+			</div>
+			<div class="search" id="search-button">
+				<h3>Search for a Pet</h3>
+				<p>Browse our database to see the lost and found pets that were reported. </p>
+				<p>We crossed our paws your pet is there!</p>
+				<div class="form-field submit">
+					<input type="submit" value="Search">
 				</div>
-			<div class="form-background">
+			</div>
+			<div class="report" id="report-form">
+				<img src="images/cat.png" class="cat-image" alt="cat" height="50" width="50">
+				<img src="images/dog.png" class="dog-image" alt="dog" height="50" width="50">
+				<h3>Report a pet</h3> 
+				<p>Fill the form below with as most information as possible regarding the pet that you have lost or found. </p> 
+				<p>Click on Submit to add your pet to our database</p>
+			</p>
+			<div class="form">
 				<form action="#" method="post">
-		<div class="action">
-			<input type="radio" name="action" value="lost" checked> 
-			<label for="action">Lost</label> 			
-			<input type="radio" name="action" value="found"> 
-			<label for="action">Found</label> 
+					<div class="action">
+						<input type="radio" name="action" value="lost" checked> 
+						<label for="action">Lost</label> 			
+						<input type="radio" name="action" value="found"> 
+						<label for="action">Found</label> 
+					</div>
+					<div class="question">
+						<div class="form-field">
+							<label for="typeofpet">What type of pet have you lost or found?</label>
+							<select>
+								<option>Dog</option>
+								<option>Cat</option>
+								<option>Rabbit</option>
+								<option>Parrot</option>
+								<option>Other</option>
+							</select>
+						</div>
+						<div class="form-field">
+							<label for="where">Where did this happened?</label>
+							<select>
+								<option>Birmingham</option>
+								<option>Blackpool</option>
+								<option>Bristol</option>
+								<option>Bristol</option>
+								<option>Cardiff</option>
+								<option>Exeter</option>
+								<option>Glasgow</option>
+								<option>Leeds</option>
+								<option>Liverpool</option>
+								<option>London</option>
+								<option>Manchester</option>
+								<option>Newcastle</option>
+								<option>Sheffield</option>
+							</select>
+						</div>
+						<div class="form-field">
+							<label for="date">And when?</label>
+							<input id="date" type="date">
+						</div>
+						<div class="form-field">
+							<label for="typeofpet">What color is the pet?</label>
+							<select>
+								<option>Black</option>
+								<option>White</option>
+								<option>Brown</option>
+								<option>Grey</option>
+								<option>Other</option>
+							</select>
+							<label for="other">Please specifiy</label>
+							<input id="other" type="text">
+							<div class="form-field">
+								<label for="size">How big is the pet?</label>
+								<select>
+									<option>Small</option>
+									<option>Medium</option>
+									<option>Large</option>
+								</select>
+							</div>
+							<div class="form-field">
+								<label for="size">Does the pet wear a collar?</label>
+								<select>
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-field submit">
+							<input type="submit" value="Submit">
+						</div>
+					</div>
+				</form>
+			</div>
 		</div>
-		<div class="question">
-			<div class="form-field">
-				<label for="typeofpet">What type of pet have you lost or found?</label>
-				<select>
-					<option>Dog</option>
-					<option>Cat</option>
-					<option>Rabbit</option>
-					<option>Parrot</option>
-					<option>Other</option>
-				</select>
-			</div>
-			<div class="form-field">
-				<label for="where">Where did this happened?</label>
-					<select>
-					<option>Birmingham</option>
-					<option>Blackpool</option>
-					<option>Bristol</option>
-					<option>Bristol</option>
-					<option>Cardiff</option>
-					<option>Exeter</option>
-					<option>Glasgow</option>
-					<option>Leeds</option>
-					<option>Liverpool</option>
-					<option>London</option>
-					<option>Manchester</option>
-					<option>Newcastle</option>
-					<option>Sheffield</option>
-				</select>
-			</div>
-			<div class="form-field">
-				<label for="date">And when?</label>
-				<input id="date" type="date">
-			</div>
-			<div class="form-field">
-				<label for="typeofpet">What color is the pet?</label>
-				<select>
-					<option>Black</option>
-					<option>White</option>
-					<option>Brown</option>
-					<option>Grey</option>
-					<option>Other</option>
-				</select>
-				<label for="other">Please specifiy</label>
-				<input id="other" type="text">
-			<div class="form-field">
-				<label for="size">How big is the pet?</label>
-				<select>
-					<option>Small</option>
-					<option>Medium</option>
-					<option>Large</option>
-				</select>
-			</div>
-			<div class="form-field">
-				<label for="size">Does the pet wear a collar?</label>
-				<select>
-					<option>Yes</option>
-					<option>No</option>
-				</select>
+	</main>
+	<footer>
+		<div class="content-wrapper">
+			<p>&copy; 2018 Pet Detector</p>
+			<div class="social-icon">
+			<a href="#"><img src="images/insta.png" width="35px" height="35px"></a>
+			<a href="#"><img src="images/fb.png" width="35px" height="35px"></a>
 			</div>
 		</div>
-		<div class="form-field submit">
-			<input type="submit" value="Submit">
-		</div>
-		</form>
-	</div>
-
-			</main>
-		</div><!-- .site-container -->
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+	</footer>
+</div><!-- .site-container -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
